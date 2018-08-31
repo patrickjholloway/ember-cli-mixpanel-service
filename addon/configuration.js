@@ -9,7 +9,9 @@ const DEFAULTS = {
     attributeOverrides: {},
     LOG_EVENT_TRACKING: false,
     token: null,
-    enabledCallback() { return true }
+    enabledCallback() { return true },
+    oneTrustComliance: false,
+    optanonGroupNumber: 2
 };
 
 /**
