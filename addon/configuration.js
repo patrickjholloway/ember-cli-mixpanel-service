@@ -8,7 +8,8 @@ const DEFAULTS = {
     pageViewAttribute: 'url',
     attributeOverrides: {},
     LOG_EVENT_TRACKING: false,
-    token: null
+    token: null,
+    enabledCallback() { return true }
 };
 
 /**
