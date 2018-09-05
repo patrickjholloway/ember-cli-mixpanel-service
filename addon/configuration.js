@@ -10,7 +10,7 @@ const DEFAULTS = {
     LOG_EVENT_TRACKING: false,
     token: null,
     enabledCallback() { return true },
-    oneTrustComliance: false,
+    oneTrustComliance: true,
     optanonGroupNumber: 2
 };
 
@@ -43,6 +43,9 @@ export default {
       @default true
       @public
     */
+    enabledCallback: DEFAULTS.enabledCallback,
+    oneTrustComliance: DEFAULTS.oneTrustComliance,
+
     enabled: DEFAULTS.enabled,
 
     /**

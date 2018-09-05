@@ -3,7 +3,7 @@ import Configuration from 'ember-cli-mixpanel-service/configuration';
 
 export default Ember.Service.extend({
     pageHasAnalytics: function() {
-        return window.mixpanel && typeof window.mixpanel === "object" && Configuration.enabled && Configuration.enabledCallback();
+        return window.mixpanel && typeof window.mixpanel === "object" && Configuration.enabled && Configuration.enabledCallback && Configuration.enabledCallback();
     },
 
     logTrackingEnabled: function() {
